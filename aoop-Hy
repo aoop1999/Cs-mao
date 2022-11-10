@@ -5,115 +5,141 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: SG新加坡001, server: sg.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: USA美国001, server: usa.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: DE德国001, server: de.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: JP日本001, server: jp.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: CA加拿大001, server: ca.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: AU澳大利亚001, server: ap.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: UK英国001, server: uk.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: SG新加坡002, server: sg.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: SG新加坡003, server: sg.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: USA美国002, server: usa.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: USA美国003, server: usa.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: DE德国002, server: de.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: DE德国003, server: de.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: JP日本002, server: jp.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: JP日本003, server: jp.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: CA加拿大002, server: ca.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: CA加拿大003, server: ca.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: AU澳大利亚002, server: ap.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: AU澳大利亚003, server: ap.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: UK英国002, server: uk.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: UK英国003, server: uk.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: true, udp: true}
-  - {name: _aoop 17, server: 168.138.94.194, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 168.138.94.194}}, udp: true}
-  - {name: _aoop 26, server: 20009.purefast2.com, port: 20009, type: trojan, password: c6db8dc8-0198-3710-8eef-de3a69cd5116, sni: purefast1.com, skip-cert-verify: true, udp: true}
-  - {name: _aoop 29, server: 144.24.147.51, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 144.24.147.51}}, udp: true}
-  - {name: _aoop 35, server: 140.238.249.80, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 140.238.249.80}}, udp: true}
-  - {name: _aoop 37, server: 129.154.37.199, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 129.154.37.199}}, udp: true}
-  - {name: _aoop+23, server: fn600mlines008re.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: cc05a17e6195, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines008re.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: _aoop+34, server: fn600mlines023.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 4a386af7970a, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines023.fnline.info, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: +Linode3, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc}, udp: true}
-  - {name: aoop, server: pf.napsternetv.com, port: 34147, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: aoop 3, server: 20.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.72img.xyz}}, udp: true}
-  - {name: aoop-俄罗斯联邦, server: pf.napsternetv.com, port: 34141, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: CN+13+→+openitsub.com, server: 183.245.146.6, port: 61003, type: trojan, password: a43c7131-99fa-4479-bf86-77d4eff6a89e, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: GetAFreeNode-Frankfurt, server: pf.napsternetv.com, port: 34147, type: vmess, uuid: 3DDBB8A1-5857-B34E-94DC-D5ED2DB8C00C, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: GetAFreeNode-LosAngeles, server: pf.napsternetv.com, port: 34146, type: vmess, uuid: 3DDBB8A1-5857-B34E-94DC-D5ED2DB8C00C, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: GetAFreeNode-NewYork, server: pf.napsternetv.com, port: 34145, type: vmess, uuid: 3DDBB8A1-5857-B34E-94DC-D5ED2DB8C00C, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: GetAFreeNode-Vienna, server: pf.napsternetv.com, port: 34141, type: vmess, uuid: 3DDBB8A1-5857-B34E-94DC-D5ED2DB8C00C, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇷🇺RU-🇩🇪DE_527, server: 91.243.82.15, port: 34147, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: CN 12 → openitsub.com, server: in04.my1188.org, port: 63086, type: vmess, uuid: b28417cd-35b5-31c1-8ace-d5128f60ffad, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: jp-balancer.myn1des.com}}, udp: true}
-  - {name: CN 6 → openitsub.com, server: oss-cn-shanghai.westdatacloud.xyz, port: 20048, type: trojan, password: 30030B00-A596-87B4-965A-511CD7E05351, skip-cert-verify: true, udp: true}
-  - {name: CN+25+→+openitsub.com, server: apollo.cn.v4.hdsky.org, port: 23201, type: ss, cipher: chacha20-ietf-poly1305, password: f32f863d-2e3c-4bf3-9f95-049f22e2302d, udp: true}
-  - {name: CN+34+→+openitsub.com, server: apollo.cn.v4.hdsky.org, port: 39207, type: ss, cipher: chacha20-ietf-poly1305, password: f32f863d-2e3c-4bf3-9f95-049f22e2302d, udp: true}
-  - {name: CN+39+→+openitsub.com, server: apollo.cn.v4.hdsky.org, port: 19764, type: ss, cipher: chacha20-ietf-poly1305, password: f32f863d-2e3c-4bf3-9f95-049f22e2302d, udp: true}
-  - {name: CN+5+→+openitsub.com, server: diana.cn.iepl.hdsky.org, port: 31039, type: ss, cipher: chacha20-ietf-poly1305, password: f32f863d-2e3c-4bf3-9f95-049f22e2302d, udp: true}
-  - {name: JP 3 → openitsub.com, server: 43.201.78.59, port: 49517, type: vmess, uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: NL 1 → openitsub.com, server: 85.17.5.150, port: 36306, type: vmess, uuid: 4070fdde-43d5-4b3f-dbcf-7751c77e4bf6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /Af5645tr}, udp: true}
-  - {name: US 2 → openitsub.com, server: cdn.chigua.tk, port: 443, type: vmess, uuid: ffffffff-ffff-ffff-ffff-ffffffffffff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: v2.chigua.tk}}, udp: true}
-  - {name: 不限速千兆-tw2225, server: fn600mlines008re.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: cc05a17e6195, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines008re.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 不限速千兆-tw2819, server: fn600mlines022.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a57a10279872, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines022.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 法国2, server: univstar1.198.244.148.214.sslip.io, port: 443, type: vmess, uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /wmzmvws, headers: {Host: goodfamily19.site}}, udp: true}
-  - {name: 美国 15, server: 66.212.20.3, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
-  - {name: 美国 16, server: cdn.chigua.tk, port: 443, type: vmess, uuid: 2cc54dbd-d448-4cc0-b61c-1d1ba6317307, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /2cc54dbd, headers: {Host: earth-identity-devel-pubmed.trycloudflare.com}}, udp: true}
-  - {name: 美国 18, server: 128.14.140.254, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
-  - {name: 美国 21, server: cdn.chigua.tk, port: 443, type: vmess, uuid: bea4a9b4-2ba4-4ed6-8247-7ea68d7f0112, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /bea4a9b4, headers: {Host: reduction-accomplish-entities-surname.trycloudflare.com}}, udp: true}
-  - {name: 美国 4, server: sl1.mayaa.eu.org, port: 443, type: vmess, uuid: 996410c5-812f-44c7-db61-2eedf272122c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dsaahjj1111d, headers: {Host: sl1.mayaa.eu.org}}, udp: true}
-  - {name: 美国 5, server: cdn.chigua.tk, port: 443, type: vmess, uuid: 72f8cfcb-dcbc-4ba9-b621-05e48ee7d588, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /72f8cfcb, headers: {Host: treasurer-bonds-bm-punk.trycloudflare.com}}, udp: true}
-  - {name: 香港HKT|防失联直连|1x, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: 7778e684-f435-4166-bf9e-0256cb28bf10, skip-cert-verify: true, udp: true}
-  - {name: 中国+12, server: apollo.cn.v4.hdsky.org, port: 28178, type: ss, cipher: chacha20-ietf-poly1305, password: f32f863d-2e3c-4bf3-9f95-049f22e2302d, udp: true}
-  - {name: aoop-17, server: 172.67.60.36, port: 2053, type: vmess, uuid: fb580643-1b0f-4c61-c228-e0dc5a70abbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop.cf}}, udp: true}
-  - {name: aoop-18, server: 172.67.178.55, port: 443, type: vmess, uuid: 0145bfef-aa53-416f-90d4-8634295dab57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoopmiss.cf}}, udp: true}
-  - {name: aoop-20, server: 172.67.233.140, port: 443, type: vmess, uuid: 3baaad0f-b764-4f4e-d382-cdd104390838, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop1994.eu.org}}, udp: true}
-  - {name: aoop-2, server: 172.67.115.144, port: 443, type: vmess, uuid: 3baaad0f-b764-4f4e-d382-cdd104390838, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop1994.eu.org}}, udp: true}
-  - {name: aoop-22, server: 172.66.0.105, port: 443, type: vmess, uuid: 3baaad0f-b764-4f4e-d382-cdd104390838, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop1994.eu.org}}, udp: true}
-  - {name: aoop-23, server: 172.67.184.67, port: 443, type: vmess, uuid: 3baaad0f-b764-4f4e-d382-cdd104390838, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop1994.eu.org}}, udp: true}
-  - {name: aoop-27, server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}, udp: true}
-  - {name: aoop-12, server: 172.67.59.59, port: 443, type: vmess, uuid: f87fc0d6-4e32-4922-cbfe-e5735a5189ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop.eu.org}}, udp: true}
-  - {name: aoop-25, server: 172.66.2.53, port: 443, type: vmess, uuid: f87fc0d6-4e32-4922-cbfe-e5735a5189ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop.eu.org}}, udp: true}
-  - {name: aoop-19, server: 172.67.143.9, port: 443, type: vmess, uuid: 0145bfef-aa53-416f-90d4-8634295dab57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoopmiss.cf}}, udp: true}
-  - {name: aoop-24, server: 172.67.65.166, port: 2053, type: vmess, uuid: fb580643-1b0f-4c61-c228-e0dc5a70abbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop.cf}}, udp: true}
-  - {name: aoop-1, server: icook.tw, port: 2053, type: vmess, uuid: fb580643-1b0f-4c61-c228-e0dc5a70abbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop.cf}}, udp: true}
-  - {name: aoop-13, server: icook.hk, port: 443, type: vmess, uuid: f87fc0d6-4e32-4922-cbfe-e5735a5189ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop.eu.org}}, udp: true}
-  - {name: aoop-2 2, server: ip.sb, port: 2053, type: vmess, uuid: fb580643-1b0f-4c61-c228-e0dc5a70abbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop.cf}}, udp: true}
-  - {name: aoop-3, server: ip125.com, port: 443, type: vmess, uuid: 0145bfef-aa53-416f-90d4-8634295dab57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoopmiss.cf}}, udp: true}
-  - {name: aoop-5, server: www.digitalocean.com, port: 443, type: vmess, uuid: 3baaad0f-b764-4f4e-d382-cdd104390838, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop1994.eu.org}}, udp: true}
-  - {name: aoop-7, server: node.jackiecj.ga, port: 443, type: vmess, uuid: 3baaad0f-b764-4f4e-d382-cdd104390838, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop1994.eu.org}}, udp: true}
-  - {name: aoop-8, server: support.cloudflare.com, port: 443, type: vmess, uuid: 3baaad0f-b764-4f4e-d382-cdd104390838, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop1994.eu.org}}, udp: true}
-  - {name: aoop-9, server: blog.lilydjwg.me, port: 443, type: vmess, uuid: 3baaad0f-b764-4f4e-d382-cdd104390838, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop1994.eu.org}}, udp: true}
-  - {name: aoop-bese, server: www.eaimty.com, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}, udp: true}
-  - {name: aoop-12 2, server: seviche.cc, port: 443, type: vmess, uuid: f87fc0d6-4e32-4922-cbfe-e5735a5189ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop.eu.org}}, udp: true}
-  - {name: aoop-4, server: muwaii.com, port: 443, type: vmess, uuid: 0145bfef-aa53-416f-90d4-8634295dab57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoopmiss.cf}}, udp: true}
-  - {name: aoop-14, server: senjianlu.com, port: 443, type: vmess, uuid: df6bf859-d846-4d34-8fbc-2fcbb935a40e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: aoop.aoop.eu.org, network: ws, ws-opts: {path: /live, headers: {Host: aoop.aoop.eu.org}}, udp: true}
-  - {name: aoop-15, server: init.blog, port: 443, type: vmess, uuid: df6bf859-d846-4d34-8fbc-2fcbb935a40e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: aoop.aoop.eu.org, network: ws, ws-opts: {path: /live, headers: {Host: aoop.aoop.eu.org}}, udp: true}
+  - {name: 🇸🇬 SG新加坡001, server: sg.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇺🇸 USA美国001, server: usa.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇩🇪 DE德国001, server: de.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇯🇵 JP日本001, server: jp.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇨🇦 CA加拿大001, server: ca.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇦🇺 AU澳大利亚001, server: ap.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇬🇧 UK英国001, server: uk.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇸🇬 SG新加坡002, server: sg.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇸🇬 SG新加坡003, server: sg.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇺🇸 USA美国002, server: usa.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇺🇸 USA美国003, server: usa.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇩🇪 DE德国002, server: de.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇩🇪 DE德国003, server: de.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇯🇵 JP日本002, server: jp.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇯🇵 JP日本003, server: jp.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇨🇦 CA加拿大002, server: ca.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇨🇦 CA加拿大003, server: ca.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇦🇺 AU澳大利亚002, server: ap.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇦🇺 AU澳大利亚003, server: ap.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇬🇧 UK英国002, server: uk.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: 🇬🇧 UK英国003, server: uk.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, skip-cert-verify: false}
+  - {name: _aoop 17, server: 168.138.94.194, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 168.138.94.194}}}
+  - {name: _aoop 26, server: 20009.purefast2.com, port: 20009, type: trojan, password: c6db8dc8-0198-3710-8eef-de3a69cd5116, sni: purefast1.com, skip-cert-verify: true}
+  - {name: _aoop 29, server: 144.24.147.51, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 144.24.147.51}}}
+  - {name: _aoop 35, server: 140.238.249.80, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 140.238.249.80}}}
+  - {name: _aoop 37, server: 129.154.37.199, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 129.154.37.199}}}
+  - {name: _aoop+23, server: fn600mlines008re.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: cc05a17e6195, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines008re.fnline.vip, path: /, tls: true, mux: true}}
+  - {name: _aoop+34, server: fn600mlines023.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 4a386af7970a, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines023.fnline.info, path: /, tls: true, mux: true}}
+  - {name: +Linode3, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202211000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc}}
+  - {name: aoop, server: pf.napsternetv.com, port: 34147, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true}
+  - {name: aoop 3, server: 20.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 20.72img.xyz}}}
+  - {name: 🇷🇺 aoop-俄罗斯联邦, server: pf.napsternetv.com, port: 34141, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇨🇳 CN+13+→+openitsub.com, server: 183.245.146.6, port: 61003, type: trojan, password: a43c7131-99fa-4479-bf86-77d4eff6a89e, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: true}
+  - {name: GetAFreeNode-Frankfurt, server: pf.napsternetv.com, port: 34147, type: vmess, uuid: 3DDBB8A1-5857-B34E-94DC-D5ED2DB8C00C, alterId: 0, cipher: auto, tls: true}
+  - {name: GetAFreeNode-LosAngeles, server: pf.napsternetv.com, port: 34146, type: vmess, uuid: 3DDBB8A1-5857-B34E-94DC-D5ED2DB8C00C, alterId: 0, cipher: auto, tls: true}
+  - {name: GetAFreeNode-NewYork, server: pf.napsternetv.com, port: 34145, type: vmess, uuid: 3DDBB8A1-5857-B34E-94DC-D5ED2DB8C00C, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇦🇹 GetAFreeNode-Vienna, server: pf.napsternetv.com, port: 34141, type: vmess, uuid: 3DDBB8A1-5857-B34E-94DC-D5ED2DB8C00C, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇷🇺 Relay_🇷🇺RU-🇩🇪DE_527, server: 91.243.82.15, port: 34147, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇨🇳 CN 12 → openitsub.com, server: in04.my1188.org, port: 63086, type: vmess, uuid: b28417cd-35b5-31c1-8ace-d5128f60ffad, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /mugua, headers: {Host: jp-balancer.myn1des.com}}}
+  - {name: 🇨🇳 CN 6 → openitsub.com, server: oss-cn-shanghai.westdatacloud.xyz, port: 20048, type: trojan, password: 30030B00-A596-87B4-965A-511CD7E05351, skip-cert-verify: true}
+  - {name: 🇨🇳 CN+25+→+openitsub.com, server: apollo.cn.v4.hdsky.org, port: 23201, type: ss, cipher: chacha20-ietf-poly1305, password: f32f863d-2e3c-4bf3-9f95-049f22e2302d}
+  - {name: 🇨🇳 CN+34+→+openitsub.com, server: apollo.cn.v4.hdsky.org, port: 39207, type: ss, cipher: chacha20-ietf-poly1305, password: f32f863d-2e3c-4bf3-9f95-049f22e2302d}
+  - {name: 🇨🇳 CN+39+→+openitsub.com, server: apollo.cn.v4.hdsky.org, port: 19764, type: ss, cipher: chacha20-ietf-poly1305, password: f32f863d-2e3c-4bf3-9f95-049f22e2302d}
+  - {name: 🇨🇳 CN+5+→+openitsub.com, server: diana.cn.iepl.hdsky.org, port: 31039, type: ss, cipher: chacha20-ietf-poly1305, password: f32f863d-2e3c-4bf3-9f95-049f22e2302d}
+  - {name: 🇯🇵 JP 3 → openitsub.com, server: 43.201.78.59, port: 49517, type: vmess, uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇳🇱 NL 1 → openitsub.com, server: 85.17.5.150, port: 36306, type: vmess, uuid: 4070fdde-43d5-4b3f-dbcf-7751c77e4bf6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Af5645tr}}
+  - {name: 🇺🇸 US 2 → openitsub.com, server: cdn.chigua.tk, port: 443, type: vmess, uuid: ffffffff-ffff-ffff-ffff-ffffffffffff, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /vmess, headers: {Host: v2.chigua.tk}}}
+  - {name: 不限速千兆-tw2225, server: fn600mlines008re.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: cc05a17e6195, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines008re.fnline.vip, path: "", tls: true, mux: true}}
+  - {name: 不限速千兆-tw2819, server: fn600mlines022.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a57a10279872, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines022.fnline.info, path: "", tls: true, mux: true}}
+  - {name: 🇫🇷 法国2, server: univstar1.198.244.148.214.sslip.io, port: 443, type: vmess, uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /wmzmvws, headers: {Host: goodfamily19.site}}}
+  - {name: 🇺🇸 美国 15, server: 66.212.20.3, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}}
+  - {name: 🇺🇸 美国 16, server: cdn.chigua.tk, port: 443, type: vmess, uuid: 2cc54dbd-d448-4cc0-b61c-1d1ba6317307, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /2cc54dbd, headers: {Host: earth-identity-devel-pubmed.trycloudflare.com}}}
+  - {name: 🇺🇸 美国 18, server: 128.14.140.254, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}}
+  - {name: 🇺🇸 美国 21, server: cdn.chigua.tk, port: 443, type: vmess, uuid: bea4a9b4-2ba4-4ed6-8247-7ea68d7f0112, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /bea4a9b4, headers: {Host: reduction-accomplish-entities-surname.trycloudflare.com}}}
+  - {name: 🇺🇸 美国 4, server: sl1.mayaa.eu.org, port: 443, type: vmess, uuid: 996410c5-812f-44c7-db61-2eedf272122c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dsaahjj1111d, headers: {Host: sl1.mayaa.eu.org}}}
+  - {name: 🇺🇸 美国 5, server: cdn.chigua.tk, port: 443, type: vmess, uuid: 72f8cfcb-dcbc-4ba9-b621-05e48ee7d588, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /72f8cfcb, headers: {Host: treasurer-bonds-bm-punk.trycloudflare.com}}}
+  - {name: 🇭🇰 香港HKT|防失联直连|1x, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: 7778e684-f435-4166-bf9e-0256cb28bf10, skip-cert-verify: true}
+  - {name: 🇨🇳 中国+12, server: apollo.cn.v4.hdsky.org, port: 28178, type: ss, cipher: chacha20-ietf-poly1305, password: f32f863d-2e3c-4bf3-9f95-049f22e2302d}
+  - {name: aoop-17, server: 172.67.60.36, port: 2053, type: vmess, uuid: fb580643-1b0f-4c61-c228-e0dc5a70abbe, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop.cf}}}
+  - {name: aoop-18, server: 172.67.178.55, port: 443, type: vmess, uuid: 0145bfef-aa53-416f-90d4-8634295dab57, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoopmiss.cf}}}
+  - {name: aoop-20, server: 172.67.233.140, port: 443, type: vmess, uuid: 3baaad0f-b764-4f4e-d382-cdd104390838, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop1994.eu.org}}}
+  - {name: aoop-2, server: 172.67.115.144, port: 443, type: vmess, uuid: 3baaad0f-b764-4f4e-d382-cdd104390838, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop1994.eu.org}}}
+  - {name: aoop-22, server: 172.66.0.105, port: 443, type: vmess, uuid: 3baaad0f-b764-4f4e-d382-cdd104390838, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop1994.eu.org}}}
+  - {name: aoop-23, server: 172.67.184.67, port: 443, type: vmess, uuid: 3baaad0f-b764-4f4e-d382-cdd104390838, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop1994.eu.org}}}
+  - {name: aoop-27, server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}}
+  - {name: aoop-12, server: 172.67.59.59, port: 443, type: vmess, uuid: f87fc0d6-4e32-4922-cbfe-e5735a5189ee, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop.eu.org}}}
+  - {name: aoop-25, server: 172.66.2.53, port: 443, type: vmess, uuid: f87fc0d6-4e32-4922-cbfe-e5735a5189ee, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop.eu.org}}}
+  - {name: aoop-19, server: 172.67.143.9, port: 443, type: vmess, uuid: 0145bfef-aa53-416f-90d4-8634295dab57, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoopmiss.cf}}}
+  - {name: aoop-24, server: 172.67.65.166, port: 2053, type: vmess, uuid: fb580643-1b0f-4c61-c228-e0dc5a70abbe, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop.cf}}}
+  - {name: aoop-1, server: icook.tw, port: 2053, type: vmess, uuid: fb580643-1b0f-4c61-c228-e0dc5a70abbe, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop.cf}}}
+  - {name: aoop-13, server: icook.hk, port: 443, type: vmess, uuid: f87fc0d6-4e32-4922-cbfe-e5735a5189ee, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop.eu.org}}}
+  - {name: aoop-2 2, server: ip.sb, port: 2053, type: vmess, uuid: fb580643-1b0f-4c61-c228-e0dc5a70abbe, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop.cf}}}
+  - {name: aoop-3, server: ip125.com, port: 443, type: vmess, uuid: 0145bfef-aa53-416f-90d4-8634295dab57, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoopmiss.cf}}}
+  - {name: aoop-5, server: www.digitalocean.com, port: 443, type: vmess, uuid: 3baaad0f-b764-4f4e-d382-cdd104390838, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop1994.eu.org}}}
+  - {name: aoop-7, server: node.jackiecj.ga, port: 443, type: vmess, uuid: 3baaad0f-b764-4f4e-d382-cdd104390838, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop1994.eu.org}}}
+  - {name: aoop-8, server: support.cloudflare.com, port: 443, type: vmess, uuid: 3baaad0f-b764-4f4e-d382-cdd104390838, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop1994.eu.org}}}
+  - {name: aoop-9, server: blog.lilydjwg.me, port: 443, type: vmess, uuid: 3baaad0f-b764-4f4e-d382-cdd104390838, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop1994.eu.org}}}
+  - {name: aoop-bese, server: www.eaimty.com, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}}
+  - {name: aoop-12 2, server: seviche.cc, port: 443, type: vmess, uuid: f87fc0d6-4e32-4922-cbfe-e5735a5189ee, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoop.eu.org}}}
+  - {name: aoop-4, server: muwaii.com, port: 443, type: vmess, uuid: 0145bfef-aa53-416f-90d4-8634295dab57, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /live, headers: {Host: www.aoopmiss.cf}}}
+  - {name: aoop-14, server: senjianlu.com, port: 443, type: vmess, uuid: df6bf859-d846-4d34-8fbc-2fcbb935a40e, alterId: 0, cipher: auto, tls: true, servername: aoop.aoop.eu.org, network: ws, ws-opts: {path: /live, headers: {Host: aoop.aoop.eu.org}}}
+  - {name: aoop-15, server: init.blog, port: 443, type: vmess, uuid: df6bf859-d846-4d34-8fbc-2fcbb935a40e, alterId: 0, cipher: auto, tls: true, servername: aoop.aoop.eu.org, network: ws, ws-opts: {path: /live, headers: {Host: aoop.aoop.eu.org}}}
+  - {name: 🇭🇰 |香港HKT|Netflix|80, server: 119.36.161.40, port: 443, type: vmess, uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/120306182525, headers: {Host: www.55321621.xyz}}}
+  - {name: 🇭🇰 |香港HKT|Netflix|126, server: 128.14.140.254, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}}
+  - {name: 🇭🇰 |香港HKT|Netflix|127, server: 172.64.148.111, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: fr2.cfcdn4.xyz}}}
+  - {name: 🇭🇰 |香港HKT|Netflix|12, server: 172.64.153.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
+  - {name: 🇭🇰 |香港HKT|Netflix|35, server: 172.64.154.102, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
+  - {name: 🇭🇰 |香港HKT|Netflix|135, server: 172.64.154.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
+  - {name: 🇭🇰 |香港HKT|Netflix|27, server: 172.64.154.155, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
+  - {name: 🇭🇰 |香港HKT|Netflix|22, server: 172.64.154.222, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg1.cfcdn1.xyz}}}
+  - {name: 🇭🇰 |香港HKT|Netflix|11, server: 45.64.22.55, port: 443, type: trojan, password: ZCRe0IlTyApFDO73qeaSlyDEaXwSOYCZ9B3j6ca3Anxg84CDKF2SxpzuNY58R3, sni: leeihs.freetrade.link, skip-cert-verify: true}
+  - {name: 🇭🇰 |香港HKT|Netflix|9, server: 45.64.22.55, port: 443, type: trojan, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS, sni: reooec.freetrade.link, skip-cert-verify: true}
+  - {name: 🇭🇰 |香港HKT|Netflix|38, server: 57.128.45.161, port: 80, type: vmess, uuid: 35d25899-ed20-46d9-9c7c-99c0d414d5e4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /user}}
+  - {name: 🇭🇰 |香港HKT|Netflix|55, server: 66.212.20.3, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}}
+  - {name: 🇭🇰 |香港HKT|Netflix|21, server: 85.17.5.150, port: 36306, type: vmess, uuid: 4070fdde-43d5-4b3f-dbcf-7751c77e4bf6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Af5645tr, headers: {Host: 85.17.5.150}}}
+  - {name: 🇭🇰 |香港HKT|Netflix|31, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxdeovz1.fovi.tk}}}
+  - {name: 🇭🇰 |香港HKT|Netflix|30, server: els200.jslist.tk, port: 8443, type: vmess, uuid: e30cfa80-bc2c-43df-e808-97876aee77e2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /wo.php, headers: {Host: els200.jslist.tk}}}
+  - {name: 🇭🇰 |香港HKT|Netflix|41, server: h5.miyun.pro, port: 2086, type: vmess, uuid: ad1454a4-c9e2-4836-c98d-66e3646c2aa4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: uk.cloudflare.quest}}}
+  - {name: 🇭🇰 |香港HKT|Netflix|47, server: ip.skk.moe, port: 2086, type: vmess, uuid: e91c45c9-2c0f-46a9-c56d-21663b9e2c18, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: buyvm.cloudflare.quest}}}
+  - {name: 🇭🇰 IPLE深港|Netflix|21, server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}}
+  - {name: "|Netflix_105", server: 141.101.115.120, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg1.cfcdn3.xyz}}}
+  - {name: "|Netflix_139", server: 219.76.13.180, port: 443, type: trojan, password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0, sni: stutter.freetrade.link, skip-cert-verify: true}
+  - {name: 🇭🇰 |深港BGP|Netflix|30, server: 198.41.212.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
+  - {name: 🇭🇰 |深港BGP|Netflix|27, server: 141.101.114.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
+  - {name: 🇭🇰 |深港BGP|Netflix|67, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxuk.fovi.tk}}}
+  - {name: 🇭🇰 |深港BGP|Netflix|98, server: 141.101.114.120, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg1.cfcdn3.xyz}}}
+  - {name: 🇭🇰 |深港BGP|Netflix|19, server: 141.101.114.200, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}}
+  - {name: 🇭🇰 |深港BGP|Netflix|18, server: 141.101.115.200, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG新加坡001
-      - USA美国001
-      - DE德国001
-      - JP日本001
-      - CA加拿大001
-      - AU澳大利亚001
-      - UK英国001
-      - SG新加坡002
-      - SG新加坡003
-      - USA美国002
-      - USA美国003
-      - DE德国002
-      - DE德国003
-      - JP日本002
-      - JP日本003
-      - CA加拿大002
-      - CA加拿大003
-      - AU澳大利亚002
-      - AU澳大利亚003
-      - UK英国002
-      - UK英国003
+      - 🇸🇬 SG新加坡001
+      - 🇺🇸 USA美国001
+      - 🇩🇪 DE德国001
+      - 🇯🇵 JP日本001
+      - 🇨🇦 CA加拿大001
+      - 🇦🇺 AU澳大利亚001
+      - 🇬🇧 UK英国001
+      - 🇸🇬 SG新加坡002
+      - 🇸🇬 SG新加坡003
+      - 🇺🇸 USA美国002
+      - 🇺🇸 USA美国003
+      - 🇩🇪 DE德国002
+      - 🇩🇪 DE德国003
+      - 🇯🇵 JP日本002
+      - 🇯🇵 JP日本003
+      - 🇨🇦 CA加拿大002
+      - 🇨🇦 CA加拿大003
+      - 🇦🇺 AU澳大利亚002
+      - 🇦🇺 AU澳大利亚003
+      - 🇬🇧 UK英国002
+      - 🇬🇧 UK英国003
       - _aoop 17
       - _aoop 26
       - _aoop 29
@@ -124,33 +150,33 @@ proxy-groups:
       - +Linode3
       - aoop
       - aoop 3
-      - aoop-俄罗斯联邦
-      - CN+13+→+openitsub.com
+      - 🇷🇺 aoop-俄罗斯联邦
+      - 🇨🇳 CN+13+→+openitsub.com
       - GetAFreeNode-Frankfurt
       - GetAFreeNode-LosAngeles
       - GetAFreeNode-NewYork
-      - GetAFreeNode-Vienna
-      - Relay_🇷🇺RU-🇩🇪DE_527
-      - CN 12 → openitsub.com
-      - CN 6 → openitsub.com
-      - CN+25+→+openitsub.com
-      - CN+34+→+openitsub.com
-      - CN+39+→+openitsub.com
-      - CN+5+→+openitsub.com
-      - JP 3 → openitsub.com
-      - NL 1 → openitsub.com
-      - US 2 → openitsub.com
+      - 🇦🇹 GetAFreeNode-Vienna
+      - 🇷🇺 Relay_🇷🇺RU-🇩🇪DE_527
+      - 🇨🇳 CN 12 → openitsub.com
+      - 🇨🇳 CN 6 → openitsub.com
+      - 🇨🇳 CN+25+→+openitsub.com
+      - 🇨🇳 CN+34+→+openitsub.com
+      - 🇨🇳 CN+39+→+openitsub.com
+      - 🇨🇳 CN+5+→+openitsub.com
+      - 🇯🇵 JP 3 → openitsub.com
+      - 🇳🇱 NL 1 → openitsub.com
+      - 🇺🇸 US 2 → openitsub.com
       - 不限速千兆-tw2225
       - 不限速千兆-tw2819
-      - 法国2
-      - 美国 15
-      - 美国 16
-      - 美国 18
-      - 美国 21
-      - 美国 4
-      - 美国 5
-      - 香港HKT|防失联直连|1x
-      - 中国+12
+      - 🇫🇷 法国2
+      - 🇺🇸 美国 15
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 18
+      - 🇺🇸 美国 21
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇭🇰 香港HKT|防失联直连|1x
+      - 🇨🇳 中国+12
       - aoop-17
       - aoop-18
       - aoop-20
@@ -175,32 +201,58 @@ proxy-groups:
       - aoop-4
       - aoop-14
       - aoop-15
+      - 🇭🇰 |香港HKT|Netflix|80
+      - 🇭🇰 |香港HKT|Netflix|126
+      - 🇭🇰 |香港HKT|Netflix|127
+      - 🇭🇰 |香港HKT|Netflix|12
+      - 🇭🇰 |香港HKT|Netflix|35
+      - 🇭🇰 |香港HKT|Netflix|135
+      - 🇭🇰 |香港HKT|Netflix|27
+      - 🇭🇰 |香港HKT|Netflix|22
+      - 🇭🇰 |香港HKT|Netflix|11
+      - 🇭🇰 |香港HKT|Netflix|9
+      - 🇭🇰 |香港HKT|Netflix|38
+      - 🇭🇰 |香港HKT|Netflix|55
+      - 🇭🇰 |香港HKT|Netflix|21
+      - 🇭🇰 |香港HKT|Netflix|31
+      - 🇭🇰 |香港HKT|Netflix|30
+      - 🇭🇰 |香港HKT|Netflix|41
+      - 🇭🇰 |香港HKT|Netflix|47
+      - 🇭🇰 IPLE深港|Netflix|21
+      - "|Netflix_105"
+      - "|Netflix_139"
+      - 🇭🇰 |深港BGP|Netflix|30
+      - 🇭🇰 |深港BGP|Netflix|27
+      - 🇭🇰 |深港BGP|Netflix|67
+      - 🇭🇰 |深港BGP|Netflix|98
+      - 🇭🇰 |深港BGP|Netflix|19
+      - 🇭🇰 |深港BGP|Netflix|18
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - SG新加坡001
-      - USA美国001
-      - DE德国001
-      - JP日本001
-      - CA加拿大001
-      - AU澳大利亚001
-      - UK英国001
-      - SG新加坡002
-      - SG新加坡003
-      - USA美国002
-      - USA美国003
-      - DE德国002
-      - DE德国003
-      - JP日本002
-      - JP日本003
-      - CA加拿大002
-      - CA加拿大003
-      - AU澳大利亚002
-      - AU澳大利亚003
-      - UK英国002
-      - UK英国003
+      - 🇸🇬 SG新加坡001
+      - 🇺🇸 USA美国001
+      - 🇩🇪 DE德国001
+      - 🇯🇵 JP日本001
+      - 🇨🇦 CA加拿大001
+      - 🇦🇺 AU澳大利亚001
+      - 🇬🇧 UK英国001
+      - 🇸🇬 SG新加坡002
+      - 🇸🇬 SG新加坡003
+      - 🇺🇸 USA美国002
+      - 🇺🇸 USA美国003
+      - 🇩🇪 DE德国002
+      - 🇩🇪 DE德国003
+      - 🇯🇵 JP日本002
+      - 🇯🇵 JP日本003
+      - 🇨🇦 CA加拿大002
+      - 🇨🇦 CA加拿大003
+      - 🇦🇺 AU澳大利亚002
+      - 🇦🇺 AU澳大利亚003
+      - 🇬🇧 UK英国002
+      - 🇬🇧 UK英国003
       - _aoop 17
       - _aoop 26
       - _aoop 29
@@ -211,33 +263,33 @@ proxy-groups:
       - +Linode3
       - aoop
       - aoop 3
-      - aoop-俄罗斯联邦
-      - CN+13+→+openitsub.com
+      - 🇷🇺 aoop-俄罗斯联邦
+      - 🇨🇳 CN+13+→+openitsub.com
       - GetAFreeNode-Frankfurt
       - GetAFreeNode-LosAngeles
       - GetAFreeNode-NewYork
-      - GetAFreeNode-Vienna
-      - Relay_🇷🇺RU-🇩🇪DE_527
-      - CN 12 → openitsub.com
-      - CN 6 → openitsub.com
-      - CN+25+→+openitsub.com
-      - CN+34+→+openitsub.com
-      - CN+39+→+openitsub.com
-      - CN+5+→+openitsub.com
-      - JP 3 → openitsub.com
-      - NL 1 → openitsub.com
-      - US 2 → openitsub.com
+      - 🇦🇹 GetAFreeNode-Vienna
+      - 🇷🇺 Relay_🇷🇺RU-🇩🇪DE_527
+      - 🇨🇳 CN 12 → openitsub.com
+      - 🇨🇳 CN 6 → openitsub.com
+      - 🇨🇳 CN+25+→+openitsub.com
+      - 🇨🇳 CN+34+→+openitsub.com
+      - 🇨🇳 CN+39+→+openitsub.com
+      - 🇨🇳 CN+5+→+openitsub.com
+      - 🇯🇵 JP 3 → openitsub.com
+      - 🇳🇱 NL 1 → openitsub.com
+      - 🇺🇸 US 2 → openitsub.com
       - 不限速千兆-tw2225
       - 不限速千兆-tw2819
-      - 法国2
-      - 美国 15
-      - 美国 16
-      - 美国 18
-      - 美国 21
-      - 美国 4
-      - 美国 5
-      - 香港HKT|防失联直连|1x
-      - 中国+12
+      - 🇫🇷 法国2
+      - 🇺🇸 美国 15
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 18
+      - 🇺🇸 美国 21
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇭🇰 香港HKT|防失联直连|1x
+      - 🇨🇳 中国+12
       - aoop-17
       - aoop-18
       - aoop-20
@@ -262,133 +314,59 @@ proxy-groups:
       - aoop-4
       - aoop-14
       - aoop-15
-  - name: 🎥 NETFLIX
-    type: select
-    proxies:
-      - 🔰 节点选择
-      - ♻️ 自动选择
-      - 🎯 全球直连
-      - SG新加坡001
-      - USA美国001
-      - DE德国001
-      - JP日本001
-      - CA加拿大001
-      - AU澳大利亚001
-      - UK英国001
-      - SG新加坡002
-      - SG新加坡003
-      - USA美国002
-      - USA美国003
-      - DE德国002
-      - DE德国003
-      - JP日本002
-      - JP日本003
-      - CA加拿大002
-      - CA加拿大003
-      - AU澳大利亚002
-      - AU澳大利亚003
-      - UK英国002
-      - UK英国003
-      - _aoop 17
-      - _aoop 26
-      - _aoop 29
-      - _aoop 35
-      - _aoop 37
-      - _aoop+23
-      - _aoop+34
-      - +Linode3
-      - aoop
-      - aoop 3
-      - aoop-俄罗斯联邦
-      - CN+13+→+openitsub.com
-      - GetAFreeNode-Frankfurt
-      - GetAFreeNode-LosAngeles
-      - GetAFreeNode-NewYork
-      - GetAFreeNode-Vienna
-      - Relay_🇷🇺RU-🇩🇪DE_527
-      - CN 12 → openitsub.com
-      - CN 6 → openitsub.com
-      - CN+25+→+openitsub.com
-      - CN+34+→+openitsub.com
-      - CN+39+→+openitsub.com
-      - CN+5+→+openitsub.com
-      - JP 3 → openitsub.com
-      - NL 1 → openitsub.com
-      - US 2 → openitsub.com
-      - 不限速千兆-tw2225
-      - 不限速千兆-tw2819
-      - 法国2
-      - 美国 15
-      - 美国 16
-      - 美国 18
-      - 美国 21
-      - 美国 4
-      - 美国 5
-      - 香港HKT|防失联直连|1x
-      - 中国+12
-      - aoop-17
-      - aoop-18
-      - aoop-20
-      - aoop-2
-      - aoop-22
-      - aoop-23
-      - aoop-27
-      - aoop-12
-      - aoop-25
-      - aoop-19
-      - aoop-24
-      - aoop-1
-      - aoop-13
-      - aoop-2 2
-      - aoop-3
-      - aoop-5
-      - aoop-7
-      - aoop-8
-      - aoop-9
-      - aoop-bese
-      - aoop-12 2
-      - aoop-4
-      - aoop-14
-      - aoop-15
-  - name: ⛔️ 广告拦截
-    type: select
-    proxies:
-      - 🛑 全球拦截
-      - 🎯 全球直连
-      - 🔰 节点选择
-  - name: 🚫 运营劫持
-    type: select
-    proxies:
-      - 🛑 全球拦截
-      - 🎯 全球直连
-      - 🔰 节点选择
+      - 🇭🇰 |香港HKT|Netflix|80
+      - 🇭🇰 |香港HKT|Netflix|126
+      - 🇭🇰 |香港HKT|Netflix|127
+      - 🇭🇰 |香港HKT|Netflix|12
+      - 🇭🇰 |香港HKT|Netflix|35
+      - 🇭🇰 |香港HKT|Netflix|135
+      - 🇭🇰 |香港HKT|Netflix|27
+      - 🇭🇰 |香港HKT|Netflix|22
+      - 🇭🇰 |香港HKT|Netflix|11
+      - 🇭🇰 |香港HKT|Netflix|9
+      - 🇭🇰 |香港HKT|Netflix|38
+      - 🇭🇰 |香港HKT|Netflix|55
+      - 🇭🇰 |香港HKT|Netflix|21
+      - 🇭🇰 |香港HKT|Netflix|31
+      - 🇭🇰 |香港HKT|Netflix|30
+      - 🇭🇰 |香港HKT|Netflix|41
+      - 🇭🇰 |香港HKT|Netflix|47
+      - 🇭🇰 IPLE深港|Netflix|21
+      - "|Netflix_105"
+      - "|Netflix_139"
+      - 🇭🇰 |深港BGP|Netflix|30
+      - 🇭🇰 |深港BGP|Netflix|27
+      - 🇭🇰 |深港BGP|Netflix|67
+      - 🇭🇰 |深港BGP|Netflix|98
+      - 🇭🇰 |深港BGP|Netflix|19
+      - 🇭🇰 |深港BGP|Netflix|18
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG新加坡001
-      - USA美国001
-      - DE德国001
-      - JP日本001
-      - CA加拿大001
-      - AU澳大利亚001
-      - UK英国001
-      - SG新加坡002
-      - SG新加坡003
-      - USA美国002
-      - USA美国003
-      - DE德国002
-      - DE德国003
-      - JP日本002
-      - JP日本003
-      - CA加拿大002
-      - CA加拿大003
-      - AU澳大利亚002
-      - AU澳大利亚003
-      - UK英国002
-      - UK英国003
+      - 🇸🇬 SG新加坡001
+      - 🇺🇸 USA美国001
+      - 🇩🇪 DE德国001
+      - 🇯🇵 JP日本001
+      - 🇨🇦 CA加拿大001
+      - 🇦🇺 AU澳大利亚001
+      - 🇬🇧 UK英国001
+      - 🇸🇬 SG新加坡002
+      - 🇸🇬 SG新加坡003
+      - 🇺🇸 USA美国002
+      - 🇺🇸 USA美国003
+      - 🇩🇪 DE德国002
+      - 🇩🇪 DE德国003
+      - 🇯🇵 JP日本002
+      - 🇯🇵 JP日本003
+      - 🇨🇦 CA加拿大002
+      - 🇨🇦 CA加拿大003
+      - 🇦🇺 AU澳大利亚002
+      - 🇦🇺 AU澳大利亚003
+      - 🇬🇧 UK英国002
+      - 🇬🇧 UK英国003
       - _aoop 17
       - _aoop 26
       - _aoop 29
@@ -399,33 +377,33 @@ proxy-groups:
       - +Linode3
       - aoop
       - aoop 3
-      - aoop-俄罗斯联邦
-      - CN+13+→+openitsub.com
+      - 🇷🇺 aoop-俄罗斯联邦
+      - 🇨🇳 CN+13+→+openitsub.com
       - GetAFreeNode-Frankfurt
       - GetAFreeNode-LosAngeles
       - GetAFreeNode-NewYork
-      - GetAFreeNode-Vienna
-      - Relay_🇷🇺RU-🇩🇪DE_527
-      - CN 12 → openitsub.com
-      - CN 6 → openitsub.com
-      - CN+25+→+openitsub.com
-      - CN+34+→+openitsub.com
-      - CN+39+→+openitsub.com
-      - CN+5+→+openitsub.com
-      - JP 3 → openitsub.com
-      - NL 1 → openitsub.com
-      - US 2 → openitsub.com
+      - 🇦🇹 GetAFreeNode-Vienna
+      - 🇷🇺 Relay_🇷🇺RU-🇩🇪DE_527
+      - 🇨🇳 CN 12 → openitsub.com
+      - 🇨🇳 CN 6 → openitsub.com
+      - 🇨🇳 CN+25+→+openitsub.com
+      - 🇨🇳 CN+34+→+openitsub.com
+      - 🇨🇳 CN+39+→+openitsub.com
+      - 🇨🇳 CN+5+→+openitsub.com
+      - 🇯🇵 JP 3 → openitsub.com
+      - 🇳🇱 NL 1 → openitsub.com
+      - 🇺🇸 US 2 → openitsub.com
       - 不限速千兆-tw2225
       - 不限速千兆-tw2819
-      - 法国2
-      - 美国 15
-      - 美国 16
-      - 美国 18
-      - 美国 21
-      - 美国 4
-      - 美国 5
-      - 香港HKT|防失联直连|1x
-      - 中国+12
+      - 🇫🇷 法国2
+      - 🇺🇸 美国 15
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 18
+      - 🇺🇸 美国 21
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇭🇰 香港HKT|防失联直连|1x
+      - 🇨🇳 中国+12
       - aoop-17
       - aoop-18
       - aoop-20
@@ -450,40 +428,90 @@ proxy-groups:
       - aoop-4
       - aoop-14
       - aoop-15
+      - 🇭🇰 |香港HKT|Netflix|80
+      - 🇭🇰 |香港HKT|Netflix|126
+      - 🇭🇰 |香港HKT|Netflix|127
+      - 🇭🇰 |香港HKT|Netflix|12
+      - 🇭🇰 |香港HKT|Netflix|35
+      - 🇭🇰 |香港HKT|Netflix|135
+      - 🇭🇰 |香港HKT|Netflix|27
+      - 🇭🇰 |香港HKT|Netflix|22
+      - 🇭🇰 |香港HKT|Netflix|11
+      - 🇭🇰 |香港HKT|Netflix|9
+      - 🇭🇰 |香港HKT|Netflix|38
+      - 🇭🇰 |香港HKT|Netflix|55
+      - 🇭🇰 |香港HKT|Netflix|21
+      - 🇭🇰 |香港HKT|Netflix|31
+      - 🇭🇰 |香港HKT|Netflix|30
+      - 🇭🇰 |香港HKT|Netflix|41
+      - 🇭🇰 |香港HKT|Netflix|47
+      - 🇭🇰 IPLE深港|Netflix|21
+      - "|Netflix_105"
+      - "|Netflix_139"
+      - 🇭🇰 |深港BGP|Netflix|30
+      - 🇭🇰 |深港BGP|Netflix|27
+      - 🇭🇰 |深港BGP|Netflix|67
+      - 🇭🇰 |深港BGP|Netflix|98
+      - 🇭🇰 |深港BGP|Netflix|19
+      - 🇭🇰 |深港BGP|Netflix|18
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 不限速千兆-tw2225
       - 不限速千兆-tw2819
-      - 香港HKT|防失联直连|1x
+      - 🇭🇰 香港HKT|防失联直连|1x
+      - 🇭🇰 |香港HKT|Netflix|80
+      - 🇭🇰 |香港HKT|Netflix|126
+      - 🇭🇰 |香港HKT|Netflix|127
+      - 🇭🇰 |香港HKT|Netflix|12
+      - 🇭🇰 |香港HKT|Netflix|35
+      - 🇭🇰 |香港HKT|Netflix|135
+      - 🇭🇰 |香港HKT|Netflix|27
+      - 🇭🇰 |香港HKT|Netflix|22
+      - 🇭🇰 |香港HKT|Netflix|11
+      - 🇭🇰 |香港HKT|Netflix|9
+      - 🇭🇰 |香港HKT|Netflix|38
+      - 🇭🇰 |香港HKT|Netflix|55
+      - 🇭🇰 |香港HKT|Netflix|21
+      - 🇭🇰 |香港HKT|Netflix|31
+      - 🇭🇰 |香港HKT|Netflix|30
+      - 🇭🇰 |香港HKT|Netflix|41
+      - 🇭🇰 |香港HKT|Netflix|47
+      - 🇭🇰 IPLE深港|Netflix|21
+      - 🇭🇰 |深港BGP|Netflix|30
+      - 🇭🇰 |深港BGP|Netflix|27
+      - 🇭🇰 |深港BGP|Netflix|67
+      - 🇭🇰 |深港BGP|Netflix|98
+      - 🇭🇰 |深港BGP|Netflix|19
+      - 🇭🇰 |深港BGP|Netflix|18
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - SG新加坡001
-      - USA美国001
-      - DE德国001
-      - JP日本001
-      - CA加拿大001
-      - AU澳大利亚001
-      - UK英国001
-      - SG新加坡002
-      - SG新加坡003
-      - USA美国002
-      - USA美国003
-      - DE德国002
-      - DE德国003
-      - JP日本002
-      - JP日本003
-      - CA加拿大002
-      - CA加拿大003
-      - AU澳大利亚002
-      - AU澳大利亚003
-      - UK英国002
-      - UK英国003
+      - 🇸🇬 SG新加坡001
+      - 🇺🇸 USA美国001
+      - 🇩🇪 DE德国001
+      - 🇯🇵 JP日本001
+      - 🇨🇦 CA加拿大001
+      - 🇦🇺 AU澳大利亚001
+      - 🇬🇧 UK英国001
+      - 🇸🇬 SG新加坡002
+      - 🇸🇬 SG新加坡003
+      - 🇺🇸 USA美国002
+      - 🇺🇸 USA美国003
+      - 🇩🇪 DE德国002
+      - 🇩🇪 DE德国003
+      - 🇯🇵 JP日本002
+      - 🇯🇵 JP日本003
+      - 🇨🇦 CA加拿大002
+      - 🇨🇦 CA加拿大003
+      - 🇦🇺 AU澳大利亚002
+      - 🇦🇺 AU澳大利亚003
+      - 🇬🇧 UK英国002
+      - 🇬🇧 UK英国003
       - _aoop 17
       - _aoop 26
       - _aoop 29
@@ -494,33 +522,33 @@ proxy-groups:
       - +Linode3
       - aoop
       - aoop 3
-      - aoop-俄罗斯联邦
-      - CN+13+→+openitsub.com
+      - 🇷🇺 aoop-俄罗斯联邦
+      - 🇨🇳 CN+13+→+openitsub.com
       - GetAFreeNode-Frankfurt
       - GetAFreeNode-LosAngeles
       - GetAFreeNode-NewYork
-      - GetAFreeNode-Vienna
-      - Relay_🇷🇺RU-🇩🇪DE_527
-      - CN 12 → openitsub.com
-      - CN 6 → openitsub.com
-      - CN+25+→+openitsub.com
-      - CN+34+→+openitsub.com
-      - CN+39+→+openitsub.com
-      - CN+5+→+openitsub.com
-      - JP 3 → openitsub.com
-      - NL 1 → openitsub.com
-      - US 2 → openitsub.com
+      - 🇦🇹 GetAFreeNode-Vienna
+      - 🇷🇺 Relay_🇷🇺RU-🇩🇪DE_527
+      - 🇨🇳 CN 12 → openitsub.com
+      - 🇨🇳 CN 6 → openitsub.com
+      - 🇨🇳 CN+25+→+openitsub.com
+      - 🇨🇳 CN+34+→+openitsub.com
+      - 🇨🇳 CN+39+→+openitsub.com
+      - 🇨🇳 CN+5+→+openitsub.com
+      - 🇯🇵 JP 3 → openitsub.com
+      - 🇳🇱 NL 1 → openitsub.com
+      - 🇺🇸 US 2 → openitsub.com
       - 不限速千兆-tw2225
       - 不限速千兆-tw2819
-      - 法国2
-      - 美国 15
-      - 美国 16
-      - 美国 18
-      - 美国 21
-      - 美国 4
-      - 美国 5
-      - 香港HKT|防失联直连|1x
-      - 中国+12
+      - 🇫🇷 法国2
+      - 🇺🇸 美国 15
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 18
+      - 🇺🇸 美国 21
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇭🇰 香港HKT|防失联直连|1x
+      - 🇨🇳 中国+12
       - aoop-17
       - aoop-18
       - aoop-20
@@ -545,32 +573,58 @@ proxy-groups:
       - aoop-4
       - aoop-14
       - aoop-15
+      - 🇭🇰 |香港HKT|Netflix|80
+      - 🇭🇰 |香港HKT|Netflix|126
+      - 🇭🇰 |香港HKT|Netflix|127
+      - 🇭🇰 |香港HKT|Netflix|12
+      - 🇭🇰 |香港HKT|Netflix|35
+      - 🇭🇰 |香港HKT|Netflix|135
+      - 🇭🇰 |香港HKT|Netflix|27
+      - 🇭🇰 |香港HKT|Netflix|22
+      - 🇭🇰 |香港HKT|Netflix|11
+      - 🇭🇰 |香港HKT|Netflix|9
+      - 🇭🇰 |香港HKT|Netflix|38
+      - 🇭🇰 |香港HKT|Netflix|55
+      - 🇭🇰 |香港HKT|Netflix|21
+      - 🇭🇰 |香港HKT|Netflix|31
+      - 🇭🇰 |香港HKT|Netflix|30
+      - 🇭🇰 |香港HKT|Netflix|41
+      - 🇭🇰 |香港HKT|Netflix|47
+      - 🇭🇰 IPLE深港|Netflix|21
+      - "|Netflix_105"
+      - "|Netflix_139"
+      - 🇭🇰 |深港BGP|Netflix|30
+      - 🇭🇰 |深港BGP|Netflix|27
+      - 🇭🇰 |深港BGP|Netflix|67
+      - 🇭🇰 |深港BGP|Netflix|98
+      - 🇭🇰 |深港BGP|Netflix|19
+      - 🇭🇰 |深港BGP|Netflix|18
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - SG新加坡001
-      - USA美国001
-      - DE德国001
-      - JP日本001
-      - CA加拿大001
-      - AU澳大利亚001
-      - UK英国001
-      - SG新加坡002
-      - SG新加坡003
-      - USA美国002
-      - USA美国003
-      - DE德国002
-      - DE德国003
-      - JP日本002
-      - JP日本003
-      - CA加拿大002
-      - CA加拿大003
-      - AU澳大利亚002
-      - AU澳大利亚003
-      - UK英国002
-      - UK英国003
+      - 🇸🇬 SG新加坡001
+      - 🇺🇸 USA美国001
+      - 🇩🇪 DE德国001
+      - 🇯🇵 JP日本001
+      - 🇨🇦 CA加拿大001
+      - 🇦🇺 AU澳大利亚001
+      - 🇬🇧 UK英国001
+      - 🇸🇬 SG新加坡002
+      - 🇸🇬 SG新加坡003
+      - 🇺🇸 USA美国002
+      - 🇺🇸 USA美国003
+      - 🇩🇪 DE德国002
+      - 🇩🇪 DE德国003
+      - 🇯🇵 JP日本002
+      - 🇯🇵 JP日本003
+      - 🇨🇦 CA加拿大002
+      - 🇨🇦 CA加拿大003
+      - 🇦🇺 AU澳大利亚002
+      - 🇦🇺 AU澳大利亚003
+      - 🇬🇧 UK英国002
+      - 🇬🇧 UK英国003
       - _aoop 17
       - _aoop 26
       - _aoop 29
@@ -581,33 +635,33 @@ proxy-groups:
       - +Linode3
       - aoop
       - aoop 3
-      - aoop-俄罗斯联邦
-      - CN+13+→+openitsub.com
+      - 🇷🇺 aoop-俄罗斯联邦
+      - 🇨🇳 CN+13+→+openitsub.com
       - GetAFreeNode-Frankfurt
       - GetAFreeNode-LosAngeles
       - GetAFreeNode-NewYork
-      - GetAFreeNode-Vienna
-      - Relay_🇷🇺RU-🇩🇪DE_527
-      - CN 12 → openitsub.com
-      - CN 6 → openitsub.com
-      - CN+25+→+openitsub.com
-      - CN+34+→+openitsub.com
-      - CN+39+→+openitsub.com
-      - CN+5+→+openitsub.com
-      - JP 3 → openitsub.com
-      - NL 1 → openitsub.com
-      - US 2 → openitsub.com
+      - 🇦🇹 GetAFreeNode-Vienna
+      - 🇷🇺 Relay_🇷🇺RU-🇩🇪DE_527
+      - 🇨🇳 CN 12 → openitsub.com
+      - 🇨🇳 CN 6 → openitsub.com
+      - 🇨🇳 CN+25+→+openitsub.com
+      - 🇨🇳 CN+34+→+openitsub.com
+      - 🇨🇳 CN+39+→+openitsub.com
+      - 🇨🇳 CN+5+→+openitsub.com
+      - 🇯🇵 JP 3 → openitsub.com
+      - 🇳🇱 NL 1 → openitsub.com
+      - 🇺🇸 US 2 → openitsub.com
       - 不限速千兆-tw2225
       - 不限速千兆-tw2819
-      - 法国2
-      - 美国 15
-      - 美国 16
-      - 美国 18
-      - 美国 21
-      - 美国 4
-      - 美国 5
-      - 香港HKT|防失联直连|1x
-      - 中国+12
+      - 🇫🇷 法国2
+      - 🇺🇸 美国 15
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 18
+      - 🇺🇸 美国 21
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇭🇰 香港HKT|防失联直连|1x
+      - 🇨🇳 中国+12
       - aoop-17
       - aoop-18
       - aoop-20
@@ -632,33 +686,59 @@ proxy-groups:
       - aoop-4
       - aoop-14
       - aoop-15
+      - 🇭🇰 |香港HKT|Netflix|80
+      - 🇭🇰 |香港HKT|Netflix|126
+      - 🇭🇰 |香港HKT|Netflix|127
+      - 🇭🇰 |香港HKT|Netflix|12
+      - 🇭🇰 |香港HKT|Netflix|35
+      - 🇭🇰 |香港HKT|Netflix|135
+      - 🇭🇰 |香港HKT|Netflix|27
+      - 🇭🇰 |香港HKT|Netflix|22
+      - 🇭🇰 |香港HKT|Netflix|11
+      - 🇭🇰 |香港HKT|Netflix|9
+      - 🇭🇰 |香港HKT|Netflix|38
+      - 🇭🇰 |香港HKT|Netflix|55
+      - 🇭🇰 |香港HKT|Netflix|21
+      - 🇭🇰 |香港HKT|Netflix|31
+      - 🇭🇰 |香港HKT|Netflix|30
+      - 🇭🇰 |香港HKT|Netflix|41
+      - 🇭🇰 |香港HKT|Netflix|47
+      - 🇭🇰 IPLE深港|Netflix|21
+      - "|Netflix_105"
+      - "|Netflix_139"
+      - 🇭🇰 |深港BGP|Netflix|30
+      - 🇭🇰 |深港BGP|Netflix|27
+      - 🇭🇰 |深港BGP|Netflix|67
+      - 🇭🇰 |深港BGP|Netflix|98
+      - 🇭🇰 |深港BGP|Netflix|19
+      - 🇭🇰 |深港BGP|Netflix|18
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG新加坡001
-      - USA美国001
-      - DE德国001
-      - JP日本001
-      - CA加拿大001
-      - AU澳大利亚001
-      - UK英国001
-      - SG新加坡002
-      - SG新加坡003
-      - USA美国002
-      - USA美国003
-      - DE德国002
-      - DE德国003
-      - JP日本002
-      - JP日本003
-      - CA加拿大002
-      - CA加拿大003
-      - AU澳大利亚002
-      - AU澳大利亚003
-      - UK英国002
-      - UK英国003
+      - 🇸🇬 SG新加坡001
+      - 🇺🇸 USA美国001
+      - 🇩🇪 DE德国001
+      - 🇯🇵 JP日本001
+      - 🇨🇦 CA加拿大001
+      - 🇦🇺 AU澳大利亚001
+      - 🇬🇧 UK英国001
+      - 🇸🇬 SG新加坡002
+      - 🇸🇬 SG新加坡003
+      - 🇺🇸 USA美国002
+      - 🇺🇸 USA美国003
+      - 🇩🇪 DE德国002
+      - 🇩🇪 DE德国003
+      - 🇯🇵 JP日本002
+      - 🇯🇵 JP日本003
+      - 🇨🇦 CA加拿大002
+      - 🇨🇦 CA加拿大003
+      - 🇦🇺 AU澳大利亚002
+      - 🇦🇺 AU澳大利亚003
+      - 🇬🇧 UK英国002
+      - 🇬🇧 UK英国003
       - _aoop 17
       - _aoop 26
       - _aoop 29
@@ -669,33 +749,33 @@ proxy-groups:
       - +Linode3
       - aoop
       - aoop 3
-      - aoop-俄罗斯联邦
-      - CN+13+→+openitsub.com
+      - 🇷🇺 aoop-俄罗斯联邦
+      - 🇨🇳 CN+13+→+openitsub.com
       - GetAFreeNode-Frankfurt
       - GetAFreeNode-LosAngeles
       - GetAFreeNode-NewYork
-      - GetAFreeNode-Vienna
-      - Relay_🇷🇺RU-🇩🇪DE_527
-      - CN 12 → openitsub.com
-      - CN 6 → openitsub.com
-      - CN+25+→+openitsub.com
-      - CN+34+→+openitsub.com
-      - CN+39+→+openitsub.com
-      - CN+5+→+openitsub.com
-      - JP 3 → openitsub.com
-      - NL 1 → openitsub.com
-      - US 2 → openitsub.com
+      - 🇦🇹 GetAFreeNode-Vienna
+      - 🇷🇺 Relay_🇷🇺RU-🇩🇪DE_527
+      - 🇨🇳 CN 12 → openitsub.com
+      - 🇨🇳 CN 6 → openitsub.com
+      - 🇨🇳 CN+25+→+openitsub.com
+      - 🇨🇳 CN+34+→+openitsub.com
+      - 🇨🇳 CN+39+→+openitsub.com
+      - 🇨🇳 CN+5+→+openitsub.com
+      - 🇯🇵 JP 3 → openitsub.com
+      - 🇳🇱 NL 1 → openitsub.com
+      - 🇺🇸 US 2 → openitsub.com
       - 不限速千兆-tw2225
       - 不限速千兆-tw2819
-      - 法国2
-      - 美国 15
-      - 美国 16
-      - 美国 18
-      - 美国 21
-      - 美国 4
-      - 美国 5
-      - 香港HKT|防失联直连|1x
-      - 中国+12
+      - 🇫🇷 法国2
+      - 🇺🇸 美国 15
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 18
+      - 🇺🇸 美国 21
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇭🇰 香港HKT|防失联直连|1x
+      - 🇨🇳 中国+12
       - aoop-17
       - aoop-18
       - aoop-20
@@ -720,6 +800,32 @@ proxy-groups:
       - aoop-4
       - aoop-14
       - aoop-15
+      - 🇭🇰 |香港HKT|Netflix|80
+      - 🇭🇰 |香港HKT|Netflix|126
+      - 🇭🇰 |香港HKT|Netflix|127
+      - 🇭🇰 |香港HKT|Netflix|12
+      - 🇭🇰 |香港HKT|Netflix|35
+      - 🇭🇰 |香港HKT|Netflix|135
+      - 🇭🇰 |香港HKT|Netflix|27
+      - 🇭🇰 |香港HKT|Netflix|22
+      - 🇭🇰 |香港HKT|Netflix|11
+      - 🇭🇰 |香港HKT|Netflix|9
+      - 🇭🇰 |香港HKT|Netflix|38
+      - 🇭🇰 |香港HKT|Netflix|55
+      - 🇭🇰 |香港HKT|Netflix|21
+      - 🇭🇰 |香港HKT|Netflix|31
+      - 🇭🇰 |香港HKT|Netflix|30
+      - 🇭🇰 |香港HKT|Netflix|41
+      - 🇭🇰 |香港HKT|Netflix|47
+      - 🇭🇰 IPLE深港|Netflix|21
+      - "|Netflix_105"
+      - "|Netflix_139"
+      - 🇭🇰 |深港BGP|Netflix|30
+      - 🇭🇰 |深港BGP|Netflix|27
+      - 🇭🇰 |深港BGP|Netflix|67
+      - 🇭🇰 |深港BGP|Netflix|98
+      - 🇭🇰 |深港BGP|Netflix|19
+      - 🇭🇰 |深港BGP|Netflix|18
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -735,27 +841,27 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG新加坡001
-      - USA美国001
-      - DE德国001
-      - JP日本001
-      - CA加拿大001
-      - AU澳大利亚001
-      - UK英国001
-      - SG新加坡002
-      - SG新加坡003
-      - USA美国002
-      - USA美国003
-      - DE德国002
-      - DE德国003
-      - JP日本002
-      - JP日本003
-      - CA加拿大002
-      - CA加拿大003
-      - AU澳大利亚002
-      - AU澳大利亚003
-      - UK英国002
-      - UK英国003
+      - 🇸🇬 SG新加坡001
+      - 🇺🇸 USA美国001
+      - 🇩🇪 DE德国001
+      - 🇯🇵 JP日本001
+      - 🇨🇦 CA加拿大001
+      - 🇦🇺 AU澳大利亚001
+      - 🇬🇧 UK英国001
+      - 🇸🇬 SG新加坡002
+      - 🇸🇬 SG新加坡003
+      - 🇺🇸 USA美国002
+      - 🇺🇸 USA美国003
+      - 🇩🇪 DE德国002
+      - 🇩🇪 DE德国003
+      - 🇯🇵 JP日本002
+      - 🇯🇵 JP日本003
+      - 🇨🇦 CA加拿大002
+      - 🇨🇦 CA加拿大003
+      - 🇦🇺 AU澳大利亚002
+      - 🇦🇺 AU澳大利亚003
+      - 🇬🇧 UK英国002
+      - 🇬🇧 UK英国003
       - _aoop 17
       - _aoop 26
       - _aoop 29
@@ -766,33 +872,33 @@ proxy-groups:
       - +Linode3
       - aoop
       - aoop 3
-      - aoop-俄罗斯联邦
-      - CN+13+→+openitsub.com
+      - 🇷🇺 aoop-俄罗斯联邦
+      - 🇨🇳 CN+13+→+openitsub.com
       - GetAFreeNode-Frankfurt
       - GetAFreeNode-LosAngeles
       - GetAFreeNode-NewYork
-      - GetAFreeNode-Vienna
-      - Relay_🇷🇺RU-🇩🇪DE_527
-      - CN 12 → openitsub.com
-      - CN 6 → openitsub.com
-      - CN+25+→+openitsub.com
-      - CN+34+→+openitsub.com
-      - CN+39+→+openitsub.com
-      - CN+5+→+openitsub.com
-      - JP 3 → openitsub.com
-      - NL 1 → openitsub.com
-      - US 2 → openitsub.com
+      - 🇦🇹 GetAFreeNode-Vienna
+      - 🇷🇺 Relay_🇷🇺RU-🇩🇪DE_527
+      - 🇨🇳 CN 12 → openitsub.com
+      - 🇨🇳 CN 6 → openitsub.com
+      - 🇨🇳 CN+25+→+openitsub.com
+      - 🇨🇳 CN+34+→+openitsub.com
+      - 🇨🇳 CN+39+→+openitsub.com
+      - 🇨🇳 CN+5+→+openitsub.com
+      - 🇯🇵 JP 3 → openitsub.com
+      - 🇳🇱 NL 1 → openitsub.com
+      - 🇺🇸 US 2 → openitsub.com
       - 不限速千兆-tw2225
       - 不限速千兆-tw2819
-      - 法国2
-      - 美国 15
-      - 美国 16
-      - 美国 18
-      - 美国 21
-      - 美国 4
-      - 美国 5
-      - 香港HKT|防失联直连|1x
-      - 中国+12
+      - 🇫🇷 法国2
+      - 🇺🇸 美国 15
+      - 🇺🇸 美国 16
+      - 🇺🇸 美国 18
+      - 🇺🇸 美国 21
+      - 🇺🇸 美国 4
+      - 🇺🇸 美国 5
+      - 🇭🇰 香港HKT|防失联直连|1x
+      - 🇨🇳 中国+12
       - aoop-17
       - aoop-18
       - aoop-20
@@ -817,6 +923,32 @@ proxy-groups:
       - aoop-4
       - aoop-14
       - aoop-15
+      - 🇭🇰 |香港HKT|Netflix|80
+      - 🇭🇰 |香港HKT|Netflix|126
+      - 🇭🇰 |香港HKT|Netflix|127
+      - 🇭🇰 |香港HKT|Netflix|12
+      - 🇭🇰 |香港HKT|Netflix|35
+      - 🇭🇰 |香港HKT|Netflix|135
+      - 🇭🇰 |香港HKT|Netflix|27
+      - 🇭🇰 |香港HKT|Netflix|22
+      - 🇭🇰 |香港HKT|Netflix|11
+      - 🇭🇰 |香港HKT|Netflix|9
+      - 🇭🇰 |香港HKT|Netflix|38
+      - 🇭🇰 |香港HKT|Netflix|55
+      - 🇭🇰 |香港HKT|Netflix|21
+      - 🇭🇰 |香港HKT|Netflix|31
+      - 🇭🇰 |香港HKT|Netflix|30
+      - 🇭🇰 |香港HKT|Netflix|41
+      - 🇭🇰 |香港HKT|Netflix|47
+      - 🇭🇰 IPLE深港|Netflix|21
+      - "|Netflix_105"
+      - "|Netflix_139"
+      - 🇭🇰 |深港BGP|Netflix|30
+      - 🇭🇰 |深港BGP|Netflix|27
+      - 🇭🇰 |深港BGP|Netflix|67
+      - 🇭🇰 |深港BGP|Netflix|98
+      - 🇭🇰 |深港BGP|Netflix|19
+      - 🇭🇰 |深港BGP|Netflix|18
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -9810,37 +9942,6 @@ rules:
  - DOMAIN-SUFFIX,yuanchengxiezuo.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zbrushcn.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zhzzx.com,🛑 全球拦截
- - DOMAIN-SUFFIX,netflix.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflix.net,🎥 NETFLIX
- - DOMAIN-SUFFIX,nflxext.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,nflximg.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,nflximg.net,🎥 NETFLIX
- - DOMAIN-SUFFIX,nflxso.net,🎥 NETFLIX
- - DOMAIN-SUFFIX,nflxvideo.net,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest0.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest1.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest2.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest3.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest4.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest5.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest6.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest7.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest8.com,🎥 NETFLIX
- - DOMAIN-SUFFIX,netflixdnstest9.com,🎥 NETFLIX
- - DOMAIN-KEYWORD,dualstack.apiproxy-,🎥 NETFLIX
- - DOMAIN-KEYWORD,dualstack.ichnaea-web-,🎥 NETFLIX
- - IP-CIDR,23.246.0.0/18,🎥 NETFLIX,no-resolve
- - IP-CIDR,37.77.184.0/21,🎥 NETFLIX,no-resolve
- - IP-CIDR,45.57.0.0/17,🎥 NETFLIX,no-resolve
- - IP-CIDR,64.120.128.0/17,🎥 NETFLIX,no-resolve
- - IP-CIDR,66.197.128.0/17,🎥 NETFLIX,no-resolve
- - IP-CIDR,108.175.32.0/20,🎥 NETFLIX,no-resolve
- - IP-CIDR,192.173.64.0/18,🎥 NETFLIX,no-resolve
- - IP-CIDR,198.38.96.0/19,🎥 NETFLIX,no-resolve
- - IP-CIDR,198.45.48.0/20,🎥 NETFLIX,no-resolve
- - IP-CIDR,34.210.42.111/32,🎥 NETFLIX,no-resolve
- - IP-CIDR,52.89.124.203/32,🎥 NETFLIX,no-resolve
- - IP-CIDR,54.148.37.5/32,🎥 NETFLIX,no-resolve
  - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
